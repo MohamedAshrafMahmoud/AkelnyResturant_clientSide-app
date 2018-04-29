@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mohamed.akelnyresturant">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCDgIt_iJZtNzkT6KIiuvT0Nrbbmh2P9-o " />
+
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name"
+            android:theme="@style/noActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FoodList_c"
+            android:theme="@style/noActionBar" />
+        <activity
+            android:name=".FoodDetails_c"
+            android:theme="@style/noActionBar" />
+        <activity
+            android:name=".Cart_c"
+            android:theme="@style/noActionBar" />
+
+        <service
+            android:name=".Service.ListenOrder"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".MainMenu_c"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SignUp"
+            android:theme="@style/noActionBar" />
+        <activity
+            android:name=".Main"
+            android:theme="@style/noActionBar" />
+        <activity
+            android:name=".Manage_c"
+            android:theme="@style/noActionBar" />
+        <activity
+            android:name=".ShowComment_c"
+            android:theme="@style/noActionBar" />
+        <activity
+            android:name=".Search_c"
+            android:theme="@style/noActionBar" />
+        <activity
+            android:name=".OrderStatus_c"
+            android:theme="@style/noActionBar" />
+        <activity
+            android:name=".OrderDetails_c"
+            android:theme="@style/noActionBar" />
+        <activity android:name=".FavoritesList"></activity>
+    </application>
+
+</manifest>
